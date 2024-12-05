@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/RamazanCarpan.github.io/static/css/main.05e1865c.css",
-    "main.js": "/RamazanCarpan.github.io/static/js/main.1a290a55.js",
+    "main.js": "/RamazanCarpan.github.io/static/js/main.075b82b5.js",
     "static/js/453.445d8ddd.chunk.js": "/RamazanCarpan.github.io/static/js/453.445d8ddd.chunk.js",
     "static/media/RestaurantResevationMVC_compressed.mov": "/RamazanCarpan.github.io/static/media/RestaurantResevationMVC_compressed.302230721c33824bfb8d.mov",
     "static/media/MenuPage.png": "/RamazanCarpan.github.io/static/media/MenuPage.b843297c067396171162.png",
@@ -25,11 +25,11 @@
     "static/media/fa-v4compatibility.woff2": "/RamazanCarpan.github.io/static/media/fa-v4compatibility.c3ea317a0f10f201597f.woff2",
     "index.html": "/RamazanCarpan.github.io/index.html",
     "main.05e1865c.css.map": "/RamazanCarpan.github.io/static/css/main.05e1865c.css.map",
-    "main.1a290a55.js.map": "/RamazanCarpan.github.io/static/js/main.1a290a55.js.map",
+    "main.075b82b5.js.map": "/RamazanCarpan.github.io/static/js/main.075b82b5.js.map",
     "453.445d8ddd.chunk.js.map": "/RamazanCarpan.github.io/static/js/453.445d8ddd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.05e1865c.css",
-    "static/js/main.1a290a55.js"
+    "static/js/main.075b82b5.js"
   ]
 }
