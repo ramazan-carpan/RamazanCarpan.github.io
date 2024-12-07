@@ -38,9 +38,7 @@
 /* General styles */
 
 /* endable this to add smooth scrolling */
-/* html {
-    scroll-behavior: smooth;
-} */
+ 
 
 
 body {
@@ -133,6 +131,10 @@ h3 { font-size: var(--fs-h3) }
     margin-bottom: 2em;
 }
 
+
+
+
+
 /* header */
 
 header {
@@ -141,9 +143,6 @@ header {
     padding: 1em;
 }
 
-.logo {
-    max-width: 100px;
-}
 
 .nav {
     position: fixed;
@@ -245,6 +244,10 @@ header {
 .hamburger::after { bottom: 6px; }
 
 
+
+
+
+
 /*  Intro section  */
 
 .intro {
@@ -293,9 +296,9 @@ header {
 
 
 /*  My services section 
-    background-image: url(../img/services-bg.jpg);
-
  */
+
+
 
 .my-services {
     background-color: var(--clr-dark);
@@ -333,7 +336,7 @@ header {
 @media (min-width: 800px) {
     .services {
         display: flex;
-        max-width: 1000px;
+        max-width: 1000px;  
         margin-left: auto;
         margin-right: auto;
     }
@@ -386,39 +389,74 @@ header {
 }
 
 /* My Work */
-
 .my-work {
     background-color: var(--clr-dark);
     color: var(--clr-light);
     text-align: center;    
+    padding: 4rem 2rem;
 }
 
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 2rem;
 }
 
 .portfolio__item {
-    background: var(--clr-accent);
+    text-decoration: none;
+    color: inherit;
+}
+
+.portfolio__card {
+    background: var(--clr-light);
+    border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .portfolio__img {
-    transition: 
-        transform 750ms cubic-bezier(.5, 0, .5, 1),
-        opacity 250ms linear;
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
 }
 
-.portfolio__item:focus {
-    position: relative;
-    z-index: 2;
+.portfolio__info {
+    padding: 1rem;
+    text-align: center;
 }
 
-.portfolio__img:hover,
-.portfolio__item:focus .portfolio__img {
-    transform: scale(1.2);
-    opacity: .5;
+.portfolio__info h3 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
 }
+
+.portfolio__info p {
+    font-size: 0.9rem;
+    color: var(--clr-dark);
+    margin: 0;
+}
+
+.portfolio__card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio__card:hover .portfolio__img {
+    transform: scale(1.1);
+}
+
+
+
+
+
 
 
 /* footer */
@@ -564,36 +602,36 @@ header {
   }
   .video-container {
     display: flex;
-    justify-content: center; /* Horizontal center */
-    align-items: center; /* Vertical center */
-    height: 100vh; /* Full viewport height (optional) */
+    justify-content: center; 
+    align-items: center; 
+    height: 70vh;
   }
 
  .video {
-    width: 100%; /* Full width of the container */
-    max-width: 1000px; /* Limit the maximum width */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    max-width: 1000px; 
+    height: auto; 
   }
   
   
   .project-image {
-    max-width: 100%; /* Ensure the image doesn't exceed the container width */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    height: auto; 
     display: block;
-    margin: 0 auto; /* Center the image horizontally */
-    border-radius: 10px; /* Optional: Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    margin: 0 auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   }
   .project-photos {
     margin: 40px 0;
   }
   
   .carousel-inner img {
-     max-height: 100%; /* Allow the image height to fill the carousel */
-  max-width: 100%; /* Prevent the image from overflowing the container */
-  object-fit: contain; /* Scale down the image to fit within the container */
-  display: block; /* Ensure proper layout */
-  margin: auto; /* Center the image */
+     max-height: 100%; 
+  max-width: 100%; 
+  object-fit: contain; 
+  display: block; 
+  margin: auto; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
@@ -604,69 +642,173 @@ header {
     border-radius: 50%;
   }
   .project-carousel img {
-    max-width: 90%; /* Limit image size to 80% of its container */
-    max-height: 100%;; /* Optional: Set a specific height for images */
-    margin: 0 auto; /* Center the image horizontally */
-    display: block; /* Ensure proper layout within carousel */
-    object-fit: contain; /* Fit the entire image inside the container */
+    max-width: 90%; 
+    max-height: 100%;; 
+    margin: 0 auto; 
+    display: block; 
+    object-fit: contain; 
   }
 .carousel-inner {
-    height: 500px; /* Set the height of the carousel */
+    height: 500px; 
   }
   
+
+
+
+
+
+
 /* General Styling for Project Header */
 .project-header {
-  text-align: center;
-  margin: 0 auto;
-  padding: 3rem 1rem;
-  background-color: var(--clr-light);
-  border-radius: 10px; /* Optional rounded corners for the section */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+    text-align: center;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    background-color: var(--clr-light);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 
 
-.project-image {
-  max-width: 100%;
-  height: auto;
-  margin: 1.5rem 0;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+  .project-image {
+    max-width: 80%; /* Reduce width for better alignment */
+    height: auto;
+    margin: 2rem auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    display: block;
+  }
+
+
+
+
+
+
 
 /* Purpose and Features Section */
 .project-info {
     height: auto;
-  text-align: left; /* Align content to the left */
-  margin: 2rem auto;
-  max-width: 800px; /* Center and restrict width */
-}
+    text-align: left;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    max-width: 900px;
+    background: var(--clr-light);
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .project-purpose {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--clr-dark);
+    margin-bottom: 1.5rem;
+  }
 
 .project-info .section__title {
-  font-size: var(--fs-h2); /* Use your custom font size */
+  font-size: var(--fs-h2);
   margin-bottom: 1rem;
-  color: var(--clr-accent); /* Use your accent color */
+  color: var(--clr-accent); 
   text-transform: uppercase;
-  text-align: left; /* Left align titles */
+  text-align: left; 
 }
 
 .project-purpose p,
 .project-features ul {
-  font-size: var(--fs-body);
-  line-height: 1.6;
+  font-size: 1.125rem;
+  line-height: 1.8;
   color: var(--clr-dark);
-  margin: 0.5rem 0;
+  margin: 1rem 0;
 }
+
+
+
+
 
 /* Features List */
+.project-features {
+    list-style-type: disc;
+    margin-left: 2rem;
+    padding: 0;
+    text-align: left;
+  }
+  
 .project-features ul {
-  list-style-type: disc;
-  margin-left: 2rem;
+    list-style-type: disc;
+    margin-left: 2rem;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .project-feature-item {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+
+
+
+
+/* source List */
+
+  .source {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--clr-light);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .source-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; /* Space between links */
+    flex-wrap: wrap;
+  }
+  
+  .source-links a {
+    text-decoration: none;
+    color: var(--clr-dark);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .source-links a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .source-icon {
+    width: 80px;
+    height: auto;
+    margin-bottom: 0.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .source h3 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
+  
+
+
+  /* */
+/* Ensure the carousel images are fully visible */
+
+  .carousel-inner img {
+    width: 100%; /* Make the image fit the width of the carousel */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the entire image fits within the container */
+    max-height: 500px; /* Optional: Limit the maximum height */
+    margin: auto; /* Center the image horizontally */
+    display: block; /* Ensure proper layout */
+    border-radius: 8px; /* Optional: Add rounded corners */
 }
 
-.project-feature-item {
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-}
-
+  
+  
   
   

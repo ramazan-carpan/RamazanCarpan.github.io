@@ -1,9 +1,8 @@
-import project1 from './Project1';
+import project1 from './Project1Reservation';
+import project2 from './Project2OrderSytem';
 
 
-const portfolioItems = {
-  1: project1,
-  
-};
+
+const portfolioItems = [project1, project2,project1,project2];
 
 export default portfolioItems;

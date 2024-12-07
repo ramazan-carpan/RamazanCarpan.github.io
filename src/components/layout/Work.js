@@ -1,16 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ProfilPhoto from '../../assets/img/profil/ProfilPhoto.jpg';
-import Project1 from '../../assets/img/project/1ReservationSystem/ReservationSystem.png';
-
+import portfolioItems from '../../data/projets/index';
 
 const Work = () => {
-  const portfolioItems = [
-    { id: 1, img: Project1, title: 'Restaurant Reservation Management', description: 'C#,MVC,SQL,Razor' },
-    { id: 1, img: Project1, title: 'Restaurant Reservation Management', description: 'C#,MVC,SQL,Razor' },
-    { id: 1, img: Project1, title: 'Restaurant Reservation Management', description: 'C#,MVC,SQL,Razor' },
-  ];
-
   return (
     <section className="my-work" id="work">
       <h2 className="section__title section__title--work">My Work</h2>
@@ -18,19 +10,24 @@ const Work = () => {
         A selection of my range of work
       </p>
       <div className="portfolio">
-        {portfolioItems.map((item) => (
+        {portfolioItems.map((project) => (
           <Link
-            key={item.id}
-            to={`/project/${item.id}`} // Navigate to the dynamic project details page
+            key={project.id}
+            to={`/project/${project.id}`}
+            state={{ project }}
             className="portfolio__item"
           >
-            <img
-              src={item.img}
-              alt={item.title}
-              className="portfolio__img"
-            />
-            <h3>{item.title}</h3>
-            <p>{item.description}</p>
+            <div className="portfolio__card">
+              <img
+                src={project.ProjectImage}
+                alt={project.title}
+                className="portfolio__img"
+              />
+              <div className="portfolio__info">
+                <h3>{project.title}</h3>
+                <p><strong>{project.title}</strong></p>
+              </div>
+            </div>
           </Link>
         ))}
       </div>

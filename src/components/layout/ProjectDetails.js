@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import portfolioItems from '../../data/projets/index';
 
@@ -9,8 +9,8 @@ const ProjectDetails = () => {
     window.scrollTo(0, 0); // Scroll to the top when the component loads
   }, []);
 
-
-  const project = portfolioItems[id];
+  // Use .find() to locate the project by ID
+  const project = portfolioItems.find((item) => item.id === parseInt(id, 10));
 
   if (!project) {
     return (
@@ -25,30 +25,36 @@ const ProjectDetails = () => {
   return (
     <div className="project-details">
       <div className="project-header">
-      {/* Intro Section */}
-
-      <section className="about-me" id="about">
-      <h2 className="section__title section__title--about">MVC Design</h2>
-      <p className="section__subtitle section__subtitle--about">{project.title}</p>
-      <div className="about-me__body">
-      <div className="project-purpose">
-            <h2>Project Purpose</h2>
-            <p>{project.purpose}</p>
+        {/* Intro Section */}
+        <section className="about-me" id="about">
+          <h2 className="section__title section__title--about">MVC Design</h2>
+          <p className="section__subtitle section__subtitle--about">{project.title}</p>
+          <div className="about-me__body">
+            <div className="project-purpose">
+              <h2>Project Purpose</h2>
+              <p>{project.purpose}</p>
+            </div>
+            <div className="project-features">
+              <h2>Features</h2>
+              <ul>
+                {project.features.map((featureItem, index) => (
+                  <li key={index}>
+                    <strong>{featureItem.feature}:</strong>
+                    <ul>
+                      {featureItem.info.map((infoDetail, idx) => (
+                        <li key={idx}>{infoDetail}</li>
+                      ))}
+                    </ul>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <img src={project.ProjectImage} alt="Profile" className="about-me__img" />
+        </section>
       </div>
-      <h2>Features</h2>
-      <ul>
-            {project.features.map((feature, index) => (
-              <li key={index}>{feature}</li>
-            ))}
-          </ul>
-           </div>
-      <img src={project.ProjectImage} alt="Profile" className="about-me__img" />
-    </section>
-      </div>
-      
-      
 
-      {/* Photo Section*/}
+      {/* Photo Section */}
       <section className="project-photos">
         <h2>Photos</h2>
         <div id="projectCarousel" className="carousel slide" data-bs-ride="carousel">
@@ -58,12 +64,13 @@ const ProjectDetails = () => {
                 key={index}
                 className={`carousel-item ${index === 0 ? 'active' : ''}`}
               >
-                <img
-                  src={image}
-                  className="d-block w-100"
-                  alt={`Slide ${index + 1}`}
-                  style={{ maxHeight: '800px', objectFit: 'cover' }}
-                />
+                <div className="carousel-image-container">
+                  <img
+                    src={image}
+                    alt={`Slide ${index + 1}`}
+                    className="carousel-image"
+                  />
+                </div>
               </div>
             ))}
           </div>
@@ -88,7 +95,6 @@ const ProjectDetails = () => {
         </div>
       </section>
 
-    
 
       {/* What I Used Section */}
       <section className="my-services">
@@ -121,19 +127,33 @@ const ProjectDetails = () => {
         </div>
       </section>
 
-
-      
-
       {/* Demo Video Section */}
       <section className="demo-video">
         <h2>Demo Video</h2>
-        <div className='video-container'>
+        <div className="video-container">
           <video controls className="video">
             <source src={project.video} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
       </section>
+
+      {/* Source Section */}
+      <section className="source">
+        <h2>Source</h2>
+        <div className="source-links">
+          {/* GitHub Repository */}
+          <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+            <img
+              src={"https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"}
+              alt="GitHub"
+              className="source-icon"
+            />
+            <h3>View Source Code</h3>
+          </a>
+        </div>
+      </section>
+
     </div>
   );
 };
