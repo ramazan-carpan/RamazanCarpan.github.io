@@ -6,36 +6,55 @@ const Services = () => {
       <h2 className="section__title section__title--services">What I Do</h2>
       <div className="services">
         <div className="service">
-          <h3>Full Stack Development</h3>
+        <h3>Frontend Development</h3>
           <p>
-            I build robust and scalable web applications using modern
-            technologies like C#, JavaScript, React,React Native, Node.js, and Express. My
-            expertise ensures seamless integration of front-end and back-end
-            systems.
+            I design and build responsive, user-friendly interfaces using technologies like:
+            <ul>
+              <li>React</li>
+              <li>React Native</li>
+              <li>JavaScript</li>
+              <li>CSS and HTML</li>
+              <li>Bootstrap and modern UI frameworks</li>
+            </ul>
           </p>
         </div>
         <div className="service">
-          <h3>Mobile Application Development</h3>
+        <h3>Backend Development</h3>
           <p>
-            I create intuitive and user-friendly mobile apps using React Native,Node.js
-            focusing on performance and responsiveness across platforms like
-            iOS and Android.
+            I develop robust and scalable back-end systems to support web and mobile applications. My expertise includes:
+            <ul>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>C# (for ASP.NET Core and MVC)</li>
+              <li>Python</li>
+              <li>RESTful API design</li>
+              <li>Authentication and security (e.g., JWT, Auth)</li>
+            </ul>
           </p>
         </div>
         <div className="service">
-          <h3>Database Management</h3>
+        <h3>Database Management</h3>
           <p>
-            Proficient in database technologies like NoSql,MongoDB and SQL Server, I
-            design and manage efficient data structures to optimize
-            application performance.
+            I create efficient and optimized database solutions tailored to application needs, including:
+            <ul>
+              <li>SQL Server</li>
+              <li>MongoDB (NoSQL)</li>
+              <li>Database schema design</li>
+              <li>Performance tuning and indexing</li>
+              <li>Cloud-based databases (Azure SQL, Cosmos DB)</li>
+            </ul>
           </p>
         </div>
         <div className="service">
-          <h3>Cloud and DevOps</h3>
+        <h3>DevOps</h3>
           <p>
-            Skilled in deploying and maintaining applications on cloud
-            platforms, I leverage tools like Docker, Kubernetes, and CI/CD
-            pipelines to ensure smooth development workflows.
+            I streamline application deployment and maintenance with expertise in:
+            <ul>
+              <li>Docker</li>
+              <li>CI/CD pipelines</li>
+              <li>Agile</li>
+              <li>Version control with GitHub and GitLab</li>
+            </ul>
           </p>
         </div>
       </div>

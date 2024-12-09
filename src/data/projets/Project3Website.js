@@ -74,7 +74,7 @@ const project3 = {
   video: DemoVideo,
 
   /* GitHub Code Source */
-  githubLink: 'https://github.com/ramazan-carpan/react-portfolio',
+  githubLink: 'https://github.com/ramazan-carpan/RamazanCarpan.github.io.git',
 
 };
 

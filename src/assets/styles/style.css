@@ -298,17 +298,15 @@ header {
 /*  My services section 
  */
 
-
-
+/* General Styles for the Services Section */
 .my-services {
     background-color: var(--clr-dark);
-     
-    background-size: cover;
-    /* background-blend-mode: multiply; */
     color: var(--clr-light);
     text-align: center;
+    background-size: cover;
 }
 
+/* Section Title Styles */
 .section__title--services {
     color: var(--clr-accent);
     position: relative;
@@ -324,29 +322,81 @@ header {
     opacity: 0.25;
 }
 
+/* Services Container */
 .services {
     margin-bottom: 4em;
-}
-
-.service {
-    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em; /* Space between services */
+    justify-content: center;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-@media (min-width: 800px) {
-    .services {
-        display: flex;
-        max-width: 1000px;  
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .service + .service {
-        margin-left: 2em;
-    }
+/* Individual Service Styles */
+.service {
+    background-color: rgba(255, 255, 255, 0.05); /* Slight transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    max-width: 500px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto;
+}
+
+.service:hover {
+    transform: translateY(-10px); /* Lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.service h3 {
+    margin-bottom: 1em;
+    color: var(--clr-accent);
+    font-size: 1.5em;
+}
+
+.service p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.service ul {
+    text-align: left; /* Aligns the list items to the left */
+    padding-left: 20px; /* Adds space to the left for indentation */
+    padding-top: 10px;
+    margin: 0; /* Adjusts the margin for better spacing */
+    list-style-type: disc; /* Ensures a bullet point style (default) */
 }
 
 
+/* Responsive Design */
+@media (min-width: 800px) {
+    .services {
+        gap: 2em;
+    }
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    margin-top: 2em;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: var(--clr-dark);
+    background-color: var(--clr-accent);
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--clr-accent-light); /* Slightly lighter accent color */
+    transform: translateY(-3px); /* Subtle lift on hover */
+}
+
+/* Optional About Me Section */
 .about-me {
     max-width: 1000px;
     margin: 0 auto;
@@ -387,6 +437,8 @@ header {
         z-index: 2;
     }
 }
+
+  
 
 /* My Work */
 .my-work {

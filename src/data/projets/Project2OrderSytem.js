@@ -66,7 +66,7 @@ const project2 = {
    /* Video section*/
   video: ReservationSystemVideo,
    /* Github Code Source*/
-  githubLink:'https://github.com/Bean-Scene-Zachary-and-Alex/Bean-Scene-ReservationSystem',
+  githubLink:'https://github.com/Bean-Scene-Zachary-and-Alex/bean-scene-app-zach-alex.git',
 };
 
 export default project2;
