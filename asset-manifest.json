@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/RamazanCarpan.github.io/static/css/main.a3278175.css",
-    "main.js": "/RamazanCarpan.github.io/static/js/main.985f78f4.js",
+    "main.css": "/RamazanCarpan.github.io/static/css/main.dbf3079e.css",
+    "main.js": "/RamazanCarpan.github.io/static/js/main.ccef25cb.js",
     "static/js/453.445d8ddd.chunk.js": "/RamazanCarpan.github.io/static/js/453.445d8ddd.chunk.js",
     "static/media/RestaurantResevationMVC_compressed.mov": "/RamazanCarpan.github.io/static/media/RestaurantResevationMVC_compressed.302230721c33824bfb8d.mov",
     "static/media/OrderManagementApp_compressed.mov": "/RamazanCarpan.github.io/static/media/OrderManagementApp_compressed.3dc05df294b2c417faec.mov",
+    "static/media/ReactWebSite_compressed.mov": "/RamazanCarpan.github.io/static/media/ReactWebSite_compressed.4d6dc4f018c2d0700d1d.mov",
     "static/media/MenuPage.png": "/RamazanCarpan.github.io/static/media/MenuPage.b843297c067396171162.png",
     "static/media/HomePage.png": "/RamazanCarpan.github.io/static/media/HomePage.ffcc438902db6f8819c1.png",
+    "static/media/DemoVideo.png": "/RamazanCarpan.github.io/static/media/DemoVideo.028fde73338685fa74b4.png",
     "static/media/fa-solid-900.ttf": "/RamazanCarpan.github.io/static/media/fa-solid-900.ad1782c70927ebc5bc87.ttf",
+    "static/media/WhoIam.png": "/RamazanCarpan.github.io/static/media/WhoIam.9e3711813f47b5d2f0d4.png",
     "static/media/Note.png": "/RamazanCarpan.github.io/static/media/Note.fe4ef3b92f3326252482.png",
     "static/media/Admin.png": "/RamazanCarpan.github.io/static/media/Admin.91e68bb4fefc8303bb02.png",
     "static/media/ReservationSystem.png": "/RamazanCarpan.github.io/static/media/ReservationSystem.8eaa289766ac58360553.png",
@@ -16,6 +19,7 @@
     "static/media/StaffBookingPage.png": "/RamazanCarpan.github.io/static/media/StaffBookingPage.f63287ca845e97a8a50a.png",
     "static/media/BookingPage.png": "/RamazanCarpan.github.io/static/media/BookingPage.14fc27b665cdc8908045.png",
     "static/media/SeachPage.png": "/RamazanCarpan.github.io/static/media/SeachPage.32c974426a0f56511099.png",
+    "static/media/Intro.png": "/RamazanCarpan.github.io/static/media/Intro.3c2e15779bad22ba6f13.png",
     "static/media/fa-solid-900.woff2": "/RamazanCarpan.github.io/static/media/fa-solid-900.83a538a018a9e44b023a.woff2",
     "static/media/UserLIst.png": "/RamazanCarpan.github.io/static/media/UserLIst.40840913236733e01ba6.png",
     "static/media/StaffReservationList.png": "/RamazanCarpan.github.io/static/media/StaffReservationList.71fd35edeea21550ac07.png",
@@ -24,20 +28,26 @@
     "static/media/UserController.png": "/RamazanCarpan.github.io/static/media/UserController.42b647b29a8b26ab5251.png",
     "static/media/TimeSlotPage.png": "/RamazanCarpan.github.io/static/media/TimeSlotPage.6b5a97f581b7dacf2edf.png",
     "static/media/fa-brands-400.woff2": "/RamazanCarpan.github.io/static/media/fa-brands-400.fdbb558523a380307689.woff2",
+    "static/media/WhatIDO.png": "/RamazanCarpan.github.io/static/media/WhatIDO.7164140800b127900359.png",
+    "static/media/Project.png": "/RamazanCarpan.github.io/static/media/Project.e0ceddcfcfe0f03aaf7e.png",
     "static/media/Floor.png": "/RamazanCarpan.github.io/static/media/Floor.5277d5a7a063cc1f467e.png",
     "static/media/UserEdit.png": "/RamazanCarpan.github.io/static/media/UserEdit.bd20f7766ccffd72968d.png",
     "static/media/ProfilPhoto.jpg": "/RamazanCarpan.github.io/static/media/ProfilPhoto.204b3042165f4e579879.jpg",
     "static/media/fa-regular-400.ttf": "/RamazanCarpan.github.io/static/media/fa-regular-400.05fdd87be89f7f8f0a1e.ttf",
+    "static/media/WhatIUsed.png": "/RamazanCarpan.github.io/static/media/WhatIUsed.a33363c2307907470d40.png",
+    "static/media/Crusel.png": "/RamazanCarpan.github.io/static/media/Crusel.c140e9a69ad48d3ab53a.png",
+    "static/media/Work.png": "/RamazanCarpan.github.io/static/media/Work.295a66422f398c8d7ba4.png",
     "static/media/fa-regular-400.woff2": "/RamazanCarpan.github.io/static/media/fa-regular-400.4f6a2dabee9c092d09b9.woff2",
+    "static/media/Footer.png": "/RamazanCarpan.github.io/static/media/Footer.1d9ddf78e02e6cc1057c.png",
     "static/media/fa-v4compatibility.ttf": "/RamazanCarpan.github.io/static/media/fa-v4compatibility.fa86b3c85e77abbd2ebd.ttf",
     "static/media/fa-v4compatibility.woff2": "/RamazanCarpan.github.io/static/media/fa-v4compatibility.c3ea317a0f10f201597f.woff2",
     "index.html": "/RamazanCarpan.github.io/index.html",
-    "main.a3278175.css.map": "/RamazanCarpan.github.io/static/css/main.a3278175.css.map",
-    "main.985f78f4.js.map": "/RamazanCarpan.github.io/static/js/main.985f78f4.js.map",
+    "main.dbf3079e.css.map": "/RamazanCarpan.github.io/static/css/main.dbf3079e.css.map",
+    "main.ccef25cb.js.map": "/RamazanCarpan.github.io/static/js/main.ccef25cb.js.map",
     "453.445d8ddd.chunk.js.map": "/RamazanCarpan.github.io/static/js/453.445d8ddd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3278175.css",
-    "static/js/main.985f78f4.js"
+    "static/css/main.dbf3079e.css",
+    "static/js/main.ccef25cb.js"
   ]
 }
