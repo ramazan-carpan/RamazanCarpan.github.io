@@ -9,7 +9,7 @@ const Services = () => {
           <h3>Full Stack Development</h3>
           <p>
             I build robust and scalable web applications using modern
-            technologies like JavaScript, React, Node.js, and Express. My
+            technologies like C#, JavaScript, React,React Native, Node.js, and Express. My
             expertise ensures seamless integration of front-end and back-end
             systems.
           </p>
@@ -17,7 +17,7 @@ const Services = () => {
         <div className="service">
           <h3>Mobile Application Development</h3>
           <p>
-            I create intuitive and user-friendly mobile apps using React Native,
+            I create intuitive and user-friendly mobile apps using React Native,Node.js
             focusing on performance and responsiveness across platforms like
             iOS and Android.
           </p>
@@ -25,7 +25,7 @@ const Services = () => {
         <div className="service">
           <h3>Database Management</h3>
           <p>
-            Proficient in database technologies like MongoDB and SQL Server, I
+            Proficient in database technologies like NoSql,MongoDB and SQL Server, I
             design and manage efficient data structures to optimize
             application performance.
           </p>

@@ -44,7 +44,7 @@ const Header = () => {
             <HashLink smooth to="/#work" className="nav__link" onClick={closeNavigation}>
               My Work
             </HashLink>
-          </li>
+          </li> 
         </ul>
       </nav>
     </header>
