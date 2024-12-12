@@ -66,6 +66,8 @@ strong { font-weight: var(--fw-bold) }
     outline-offset: 3px;
 }
 
+
+
 /* Buttons */
 
 .my-services .btn {
@@ -331,6 +333,7 @@ header {
     justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
+    align-items: stretch;
 }
 
 /* Individual Service Styles */
@@ -342,6 +345,10 @@ header {
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: 0 auto;
+    flex: 1 1 400px; /* Ensures flexibility with a minimum width */
+    display: flex; /* Makes the service content stretch evenly */
+    flex-direction: column; /* Ensures proper stacking of content */
+    justify-content: space-between; /* Balances content vertically */
 }
 
 .service:hover {

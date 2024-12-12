@@ -96,6 +96,7 @@ const ProjectDetails = () => {
       </section>
 
 
+
       {/* What I Used Section */}
       <section className="my-services">
         <h2 className="section__title section__title--services">What I Used</h2>
@@ -126,6 +127,7 @@ const ProjectDetails = () => {
           </div>
         </div>
       </section>
+
 
       {/* Demo Video Section */}
       <section className="demo-video">
